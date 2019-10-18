@@ -1,0 +1,118 @@
+@startuml
+ 
+
+interface Fly {
+    +String flying()
+}
+interface Walk {
+    +String walking()
+}
+interface Sing {
+    +String singing()
+}
+interface Swim {
+    +String swimming()
+}
+
+interface Joke {
+    +String joking()
+}
+
+class Animal
+class Bird
+class Insects
+class Aquatic {
+	+String swimming()
+}
+
+Animal <|-down- Bird
+Animal <|-down- Aquatic
+Animal <|-down- Insects
+
+Swim <|-down- Aquatic
+
+class Duck {
+  +String singing() (Quack, quack)
+
+}
+
+Bird <|-down- Duck
+Sing <|-down- Duck
+Swim <|-down- Duck
+
+class Chicken {
+ +String singing() (Cluck, cluck)
+}
+
+Bird <|-down- Chicken
+Sing <|-down- Chicken
+
+class Rooster {
+ +String singing() (Cock-a-doodle-doo)
+ +String singing(RoosterLanguage) 
+}
+
+Enum RoosterLanguage {
+ Danish, Dutch, and so on..
+}
+
+Chicken <|-down- Rooster
+
+enum ParrotCompanion {
+   DOG, CAT, ROOSTER
+}
+
+class Parrot{
+ +String singing() 
+ +String singing(ParrotCompanion) 
+}
+
+Bird <|-down- Parrot
+Sing <|-down- Parrot 
+
+
+Swim <|-down- Aquatic
+
+class Fish {
+ -String size
+ -String color
+ +String swimming()
+ +void setSize(String)
+ +String getSize()
+ +void setColor(String)
+ +String getColor()
+}
+
+Aquatic <|-down- Fish 
+
+class Sharks {
+ + Sharks( size, color)
+ + void eats(Fish)
+}
+Fish <|-down- Sharks
+
+class Clownfish {
+ + Clownfish( size, color)
+ +String joking()
+}
+Fish <|-down- Clownfish
+Joke <|-down- Clownfish
+
+class Dolphins {
+ +String swimming()
+}
+Aquatic <|-down- Dolphins 
+
+class Butterfly {
+ +String flying()
+}
+Insects <|-down- Butterfly
+Fly <|-down- Butterfly
+
+class Caterpillar {
+  +String walking()
+}
+Insects <|-down- Caterpillar
+Walk <|-down- Caterpillar
+
+@enduml
