@@ -8,9 +8,9 @@ Animal hierarchy assignment
 
 ## JUnit
 
-`demo.assignment.a.one.SolutionTest`: Test the Animals and Birds. This both classes are specific to first question, they are not part of above hierarchy
+`SolutionTest`: Test the Animals and Birds. This both classes are specific to first question, they are not part of above hierarchy
 
-`demo.assignment.a.one.ParrotCompanionTest`: Test Parrot when he is with dogs and cats.
+`ParrotCompanionTest`: Test Parrot when he is with dogs and cats.
 
 ## Packaging
 ```
