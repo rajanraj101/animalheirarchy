@@ -12,6 +12,8 @@ Animal hierarchy assignment
 
 `ParrotCompanionTest`: Test Parrot when he is with dogs and cats.
 
+`RoosterLanguageTest`: Test Rooster when he sing in dutch and japanese
+
 `AnimalControllerTest`: Testing rest services
 
 ## Packaging

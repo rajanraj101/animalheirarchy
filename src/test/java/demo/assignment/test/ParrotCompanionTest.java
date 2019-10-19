@@ -1,4 +1,4 @@
-package demo.assignment.a.one;
+package demo.assignment.test;
 
 import org.junit.Assert;
 import org.junit.Test;

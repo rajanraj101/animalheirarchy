@@ -1,4 +1,4 @@
-package demo.assignment.a.one;
+package demo.assignment.test;
 
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
