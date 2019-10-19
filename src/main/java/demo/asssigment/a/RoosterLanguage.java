@@ -2,8 +2,21 @@ package demo.asssigment.a;
 
 public enum RoosterLanguage {
 
-	Danish("kykyliky"),
-	DUTCH("kukeleku");
+	DANISH("kykyliky"),
+	DUTCH("kukeleku"),
+	FINNISH("kukko kiekuu"),
+	FRENCH("cocorico"),
+	GERMAN("kikeriki"),
+	GREEK("kikiriki"),
+	HEBREW("coo-koo-ri-koo"),
+	HUNGARIAN("kukuriku"),
+	ITALIAN("chicchirichi"),
+	JAPANESE("ko-ke-kok-ko-o"),
+	PORTUGUESE("cucurucu"),
+	RUSSIAN("kukareku"),
+	SWEDISH("kuckeliku"),
+	TURKISH("kuk-kurri-kuuu"),
+	URDU("kuklooku");
 	 
 	String text;
 	
