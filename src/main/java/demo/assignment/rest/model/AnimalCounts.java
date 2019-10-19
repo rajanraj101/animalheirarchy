@@ -2,7 +2,6 @@ package demo.assignment.rest.model;
 
 import org.springframework.stereotype.Component;
 
-@Component
 public class AnimalCounts {
 
     private  long fly;

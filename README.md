@@ -12,6 +12,8 @@ Animal hierarchy assignment
 
 `ParrotCompanionTest`: Test Parrot when he is with dogs and cats.
 
+`AnimalControllerTest`: Testing rest services
+
 ## Packaging
 ```
 mvn clean package

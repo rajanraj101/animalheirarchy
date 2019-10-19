@@ -16,19 +16,19 @@ public class AnimalController {
 	@Autowired
 	AnimalService animalService;
 	
-    private static final String template = "Flying animals are %s <br> Walking animals are %s <br> Singing animals are %s <br> Swimming animals are %s <br> ";
+    //private static final String template = "Flying animals are %s <br> Walking animals are %s <br> Singing animals are %s <br> Swimming animals are %s <br> ";
    
     @RequestMapping("/animalCount")
-    public String getAnimalCount() {
+    public AnimalCounts getAnimalCount() {
     	 
     
     	AnimalCounts cnt =	animalService.countingAnimalByCategory();
     	
     	if(StringUtils.isEmpty(cnt)) {
-    		return "no records";
+    		return null;
     	} else {
     		
-    		return  String.format(template,cnt.getFly() , cnt.getWalk(), cnt.getSing(), cnt.getSwim());
+    		return  cnt;// String.format(template,cnt.getFly() , cnt.getWalk(), cnt.getSing(), cnt.getSwim());
     	}
   
     }
