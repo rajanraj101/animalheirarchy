@@ -3,11 +3,10 @@ package demo.asssigment.a;
 import org.springframework.stereotype.Component;
 
 import demo.assignment.category.Bird;
-import demo.assignment.category.Fly;
 import demo.assignment.category.Sing;
 
 @Component
-public class Parrot extends Bird implements Sing, Fly {
+public class Parrot extends Bird implements Sing {
 
 	@Override
 	public String singing() { 
@@ -18,9 +17,4 @@ public class Parrot extends Bird implements Sing, Fly {
 		return companion.getVoice().toString();
 	}
 
-	@Override
-	public String flying() {
-		
-		return "flying";
-	}
 }

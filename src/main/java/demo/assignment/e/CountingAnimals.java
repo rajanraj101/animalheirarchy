@@ -9,7 +9,6 @@ import demo.assignment.b.Dolphins;
 import demo.assignment.b.Fish;
 import demo.assignment.b.Sharks;
 import demo.assignment.category.Animal;
-import demo.assignment.category.Bird;
 import demo.assignment.category.Fly;
 import demo.assignment.category.Sing;
 import demo.assignment.category.Swim;
@@ -37,7 +36,6 @@ public class CountingAnimals {
 		
 		ArrayList<Animal> animals =  new ArrayList<Animal>();
 				 
-		animals.add(new Bird());
 		animals.add(new Duck());
 		animals.add(new Chicken());
 		animals.add(new Rooster());

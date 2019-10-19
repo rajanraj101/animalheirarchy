@@ -3,6 +3,6 @@ package demo.assignment.category;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Insects extends Animal {
+public abstract class Insects extends Animal {
 
 }
